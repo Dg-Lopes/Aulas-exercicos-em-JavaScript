@@ -1,0 +1,28 @@
+body {
+    background: rgb(120, 120, 235);
+    /* font: normal 12pt Arial; */
+    font-family: 'Roboto', sans-serif;
+}
+ header {
+     color: white;
+     text-align: center;    /*Alinhamento de texto*/
+ }
+
+ section {
+     background: white;
+     border-radius: 10px;           /*Raio da borda*/
+     padding: 15px;                /*Preenchimento*/
+     width: 500px;                /*Largura*/
+     margin: auto;               /*Margem*/
+     box-shadow: 5px, 5px 10px; /*Sombra da caixa*/
+ }
+
+ select#flista {
+     width: 150px;
+ }
+
+ footer {
+     color: white;
+     text-align: center;
+     font-style: italic;
+ }

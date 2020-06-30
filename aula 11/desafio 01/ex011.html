@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Indentificação dos cidadãos</title>
+</head>
+<body>
+    <h1>Sistema de Indentificação</h1>
+    Pais da pessoa: <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="pesquisar()">
+    <div id="res"></div>
+
+    <script>
+        function pesquisar () {
+            var txtp = window.document.querySelector('input#txtp')
+            var res = window.document.querySelector('div#res')
+            var pais = String(txtp.value)
+            res.innerHTML = `<p>O seu pais é <strong>${pais}</strong></p>`
+            res.innerHTML == (`Vivendo em ${pais}`)
+            if (pais != 'Brasil') {
+                res.innerHTML += ('<P>Você é <strong>Estrangeiro</strong>, seja bem vindo a terra do zueira <strong>HUAHUA</strong> !!!</P>')
+            } else {
+                res.innerHTML += ('<P>Você é <strong>Brasileiro</strong>, seja bem vindo de volta<P>')
+            }
+        }
+    </script>
+    
+</body>
+</html>

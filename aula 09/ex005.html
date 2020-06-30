@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vamoos Lá</title>
+    <style>
+        body {
+            background: rgb(170, 231, 231);
+            font: normal 12pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai resultado</p>
+    <p>Aprendendo a uasr o <strong>DOM</strong> em JavaScript</p>
+    <div id='msg'>Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var d = window.document.getElementById('msg')
+        d.style.background  = 'green'
+        d.innerText = ('isso ae')
+    </script>
+</body>
+</html>

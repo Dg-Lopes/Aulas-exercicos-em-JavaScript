@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos DOM</title>
+    <style>
+       div#area {                                     /*CSS*/
+           background: green;
+           color: rgb(255, 253, 253);
+           width: 200px;
+           height: 200px;
+           line-height: 200px;
+           text-align: center;
+       }
+    </style>   
+</head>
+<body>
+     <div id="area" onclick="clicar()" onemouseenter="entra()">
+         Interaja...
+     </div>
+     
+     <script>
+          var a = window.document.getElementById('area')
+          a.addEventListener('click', clicar)      //por algum motivo esse côdigo ativa
+          a.addEventListener('mouseenter', entrar) // as animações em tempo real
+          a.addEventListener('mouseout', sair)
+          function clicar() {
+              a.innerText = 'Clicou!'
+              a.style.background = 'green'
+          }    
+          function entrar() {
+              a.innerText = 'Entrou' 
+              a.style.background = 'blue'
+          }
+          function sair () {
+              a.innerText = 'Saiu'
+              a.style.background = 'red'
+          }
+     </script>
+</body>
+</html>
